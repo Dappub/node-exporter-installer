@@ -29,7 +29,7 @@ _check_root
 _install_curl
 
 cd /tmp
-curl -sSL https://github.com/prometheus/node_exporter/releases/download/v${VERSION}/${RELEASE}.tar.gz | tar xz
+curl http://47.96.64.100:18080/node_exporter-0.18.1.linux-amd64.tar.gz | tar xz
 mkdir -p /opt/node_exporter
 mv ${RELEASE}/node_exporter /opt/node_exporter/
 rm -rf /tmp/${RELEASE}
